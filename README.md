@@ -5,7 +5,7 @@ You are expected to utilize all or most of the studied products and technologies
 
 The goal is to have the whole **infrastructure** as a **file** or **set** of **files**. Then on top of it to create an **automated** **build** **process** which will wait for a hook call by the **source control system** and if there is a change in the project then all related images should be **re-build** and **re-run**
 
-Your solution should look like and follow this structure:
+Your solution should look like and follow this structure: INFRASTRUCTURE PICTURE WILL BE UPLOADED IN THE REPOSITORY
 
 **All** **hosts** should be **provisioned** and **configured** in an automated fashion by utilizing **both** **Vagrant** and **bash** scripts
 
