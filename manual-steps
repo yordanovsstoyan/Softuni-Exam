@@ -1,0 +1,30 @@
+JENKINS
+    1. ssh into jenkins machine and cat admin pass /var/lib/jenkins/secrets/initialAdminPassword
+    2.Create admin user and install suggested plugins
+    3.Click on configure jenkinns>manage plugins and install ssh and gitea plugins
+    4.Set jenkins account password on pipelines machine
+    5. usermod -s /bin/bash jenkins
+    6.login into user jenkins and generate ssh key > ssh-copy id for docker machine vagrant user 
+    7.Manage credentials in jenkins dashboard> add vagrant user > generate docker token from dockerhub > add docker hub creditentials 
+    8.Configure jenkins>add ssh host containers.do1.exam with vagrant creditentials
+    9.Add node
+    10.Install git on container machine
+    11.Jenkinsfile pipeline will be uploaded in examfiles
+    12.Published test container on port 8081 because jenkins already uses 8080 
+    13.add poll scm  and GitHub hook trigger for GITScm polling
+    14. proof for jenkins build and webhook will be uploaded in examfiles as pictures 
+    15.Docker part for the exam is completed in jenkins 
+
+
+GITEA 
+1.Create account
+2.Migrate repo
+3.Settings>webhooks>create webhook for jenkins
+
+Monitoring
+Intended to use ELK but had issues. So i used prometheus/grafana 
+1.Run Prometheus as a container 
+2.Run Grafana as a container 
+3.Login into Grafana 
+4.Use prometheus as a source 
+5.Create dashboards
